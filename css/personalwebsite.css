@@ -1,0 +1,281 @@
+@font-face{
+	font-family: roboto-condensed,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body{
+	font-family: roboto-condensed, Helvetica, Arial;
+	line-height: 1.55rem;
+	display:block;
+	margin:0;
+	background-color:rgba(255,253,208,0.1);
+	text-transform: lowercase;
+}
+header{}
+
+h1{
+	text-align: center;
+	color:#443e3c;
+	text-transform: capitalize;
+}
+
+.active{
+	text-decoration:underline;
+}
+
+nav a{
+	display:block;
+	text-transform: lowercase;
+	text-decoration:none;
+	color:#443e3c;
+	font-size:1.25em;
+	padding:2.3%;
+	padding-bottom:0.65rem;
+	transition:.5s color;
+	padding-left:3%;
+
+}
+nav{
+	display:inline-block;
+	height:100vh;
+	overflow:auto;
+	width:17%;
+	box-sizing: border-box;
+	background-image:linear-gradient(to right,#eeeceb,rgba(184,184,184,0.6));
+	padding-top:2%;
+	border-radius:2.5px;
+	position:fixed;
+}
+nav a:hover{
+	color:white;	
+}
+
+main{
+	
+	font-size:1.25em;
+	padding-left: 18%;
+	
+	line-height: 3rem;
+}
+
+.site-footer{
+	position:fixed;
+	bottom:0;
+	padding-left:none;
+	padding-bottom:1.1%;
+	max-width:17%;
+}
+
+.about-me{
+	
+	font-size:1.25em;
+	padding-left:18%;
+	line-height: 3rem;
+}
+.about-me a{
+	text-decoration: none;
+	color:#443e3c;
+}
+
+.music{
+	
+	font-size:1.25em;
+	padding-left:18%;
+	line-height: 3rem;
+	text-decoration:none;
+	color:#443e3c;
+}
+i{
+	display:inline-block;
+	vertical-align: bottom;
+}
+h2{
+	padding-top:1.15%;
+	text-align: left;
+}
+.projects{
+	font-size:1.25em;
+	padding-left:18%;
+	line-height: 3rem;
+	padding-top: 0;
+}
+.music a{
+	text-decoration: none;
+	color:#443e3c;
+}
+.contact-info{
+	font-size:1.25em;
+	padding-left:18%;
+	line-height: 3rem;
+	padding-top: 0;
+	
+}
+#pw{
+	text-decoration:none;
+	color:#443e3c;
+}
+.fa-linkedin{
+	text-decoration:none;
+	color:#4875B4;
+}
+.fa-soundcloud{
+	color:#FE5000;
+}
+.fa-envelope{
+	color:#D44638;
+	text-decoration:none;
+}
+li a{
+	text-decoration: none;
+	color:black;
+}
+#contact_list{
+	list-style-type: circle;
+	padding, margin:none;
+}
+
+#contact_list a{
+	text-decoration: none;
+}
+
+.vacant{
+	width:97%;
+	padding-left:18%;
+	padding-top:2%;
+}
+
+small{
+	text-transform: capitalize;
+	text-decoration:none;
+	color:black;
+}
+
+
+#project_list{
+	padding, margin:none;
+	list-style-type: circle;
+}
+
+#sunset{
+	padding-left:17.0%;
+
+}
+
+.img-fluid{
+	min-width:100%;
+}
+
+/*social menu for contact page only*/
+
+.social-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 30px;
+    line-height: 60px;
+    transition: .4s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.4s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    text-decoration:none;
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #4875B4;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #D44638;
+}
+
+.socialtext{
+	display:none;
+}
+
+/*end of social menu*/
+
+
+/* for mobile devices */
+@media screen and (max-width:575px){
+	nav a{
+	display:inline-block;
+	text-transform: lowercase;
+	text-decoration:none;
+	color:#443e3c;
+	line-height:0.5em;
+	
+	font-size:1.25em;
+	padding:1%;
+	
+	transition:.5s color;
+	
+
+}
+nav{
+	width:100vw;
+	overflow:auto;
+	background-image:linear-gradient(to bottom,#eeeceb,rgba(184,184,184,0.6));
+	height:5.0%;
+	border-radius:2.5px;
+	position: absolute;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items:center;
+	flex-wrap:wrap;
+
+}
+h2{
+	padding-top:12%;
+}
+main,.about-me,.music,.projects,.contact-info,.vacant,#sunset{
+	padding-left:0;
+}
+.vacant{
+	padding:none;
+	width:100%
+}
+h2{
+	text-align:center;
+}
+p{
+	padding:2%;
+}
+
+.site-footer{
+	display:none;
+}
+
+
+}
+
+/* end */
+
+
+
