@@ -246,6 +246,8 @@ figcaption{
 	margin-left:12%;
 }
 
+
+
 /*dmlab*/
 
 /*portfolio gallery*/
@@ -308,6 +310,9 @@ figcaption{
  .gallery{
  	padding-left:5%;
  }
+ #xdprototype{
+ 	margin-left:0;
+ }
 }
 /* end of gallery */
 
@@ -363,6 +368,7 @@ p{
 .site-footer{
 	display:none;
 }
+
 
 
 }
