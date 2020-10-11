@@ -74,10 +74,7 @@ main{
 	padding-left:18%;
 	line-height: 3rem;
 }
-.about-me a{
-	text-decoration: none;
-	color:#443e3c;
-}
+
 
 .music{
 	
@@ -101,10 +98,7 @@ h2{
 	line-height: 3rem;
 	padding-top: 0;
 }
-.music a{
-	text-decoration: none;
-	color:#443e3c;
-}
+
 .contact-info{
 	font-size:1.25em;
 	padding-left:18%;
@@ -158,6 +152,9 @@ small{
 	list-style-type: circle;
 }
 
+#dmlabapp{
+	text-transform: capitalize;
+}
 #sunset{
 	padding-left:17.0%;
 
@@ -219,6 +216,101 @@ small{
 }
 
 /*end of social menu*/
+
+/*all centered images*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+/*all centered images*/
+
+/*dmlab*/
+
+#dmlab{
+	text-transform: capitalize;
+}
+
+#dmlabiphone{
+	width:300px;
+}
+
+figcaption{
+	text-align:center;
+}
+
+#finishedsitemap, #roughinteractionmap, #wireframemap, #persona{
+	width:75%;
+	margin-left:12%;
+}
+
+/*dmlab*/
+
+/*portfolio gallery*/
+.gallery {
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  padding: 20px;
+  padding-left:18%;
+  
+}
+
+/* Center website*/
+
+.gallery h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+ .gallery{
+ 	padding-left:5%;
+ }
+}
+/* end of gallery */
+
 
 
 /* for mobile devices */
