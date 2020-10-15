@@ -155,6 +155,7 @@ small{
 #dmlabapp{
 	text-transform: capitalize;
 }
+
 #sunset{
 	padding-left:17.0%;
 
@@ -216,6 +217,11 @@ small{
 }
 
 /*end of social menu*/
+
+#weblink{
+	color:black;
+	text-decoration:underline;
+}
 
 /*all centered images*/
 .center {
