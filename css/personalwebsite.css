@@ -165,6 +165,15 @@ small{
 	min-width:100%;
 }
 
+#pi,#ostp{
+	text-transform: uppercase;
+}
+#dr{
+	text-transform: capitalize;
+}
+#uirprojectlink{
+	text-align:center;
+}
 /*social menu for contact page only*/
 
 .social-menu ul {
