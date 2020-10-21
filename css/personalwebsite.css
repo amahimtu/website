@@ -372,7 +372,7 @@ figcaption{
 
 
 /* for mobile devices */
-@media screen and (max-width:575px){
+@media screen and (max-width:600px){
 	nav a{
 	display:inline-block;
 	text-transform: lowercase;
