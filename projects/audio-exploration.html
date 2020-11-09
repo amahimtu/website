@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audio Exploration | Projects | Akshay Mahimtura</title>
+    <meta name="description" content="Audio Exploration by Akshay Mahimtura.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/personalwebsite.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bjd2zmg.css">
+    <script src="https://kit.fontawesome.com/7302c17786.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <!--favicon-->
+</head>
+<body>
+	<header>
+	<a href="../index.html" id="pw"><h1>Akshay Mahimtura</h1></a>
+	</header>
+	<nav>
+			
+			<a href="../index.html">About</a>
+			<a href="../projects.html" class="active">Projects</a>
+			<a href="../music.html">Music</a>
+			<a href="../contact.html">Contact</a>
+
+		    <div class="site-footer"><a href="https://www.linkedin.com/in/akshaymahimtura/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true" aria-label="LinkedIn"></i></a> <a href="https://soundcloud.com/mellowreindeer" target="_blank"><i class="fa fa-soundcloud fa-lg" aria-hidden="true" aria-label="SoundCloud"></i></a><small>&copy; 2020 Akshay Mahimtura</small></div>
+	</nav>
+	<main>
+		<h2>Audio Exploration</h2><br>
+        
+		<h3>#1</h3>
+        
+		<h4>My first foray into audio programming.</h4>
+		<p>I used a programming language called <a href="https://chuck.cs.princeton.edu/" target="_blank"> ChucK</a> to develop this composition. My aim was to play and experiment with code and computer science to generate sound/music (rather than to create a particularly pleasant-sounding competition).</p>
+        <p>This piece uses three different types of sound waves to produce randomly-generated sound (within set frequency ranges), but also follows established musical conventions, such as partially travelling up and down the chromatic scale.</p>
+        <audio controls>
+        <source src="composition1copy.wav" type="audio/wav">
+        <p>Experiment #1</p>
+        <p>Your browser does not support HTML5 audio</p>
+        </audio>
+
+        <p>Here's the code I wrote:</p>
+        <figure>
+		<pre>
+		<code>
+//sound network
+
+SinOsc s=> dac;
+SawOsc t=> dac;
+SqrOsc u=> dac;
+
+//first sound
+0.5 => s.gain;
+0=>t.gain;
+0=>u.gain;
+
+for (0=> int i; i<=400; i++){
+    i=>s.freq;
+    .01::second=>now;
+}
+
+//second sound
+0=>s.gain;
+0=>t.gain;
+0.3=>u.gain;
+
+for (300=>int i; i>=0; i--){
+    i=>u.freq;
+    .011::second=>now;
+}
+
+//third sound
+0=>s.gain;
+0.3=>t.gain;
+0=>u.gain;
+
+for (250=>int i; i>=20; i--){
+    i=>t.freq;
+    .01::second=>now;
+}
+
+//setting time 'later' (10 second)
+now + 10::second=> time later;
+
+//setting gain for this part of composition
+0.4=>s.gain;
+0=>t.gain;
+0.2 =>u.gain;
+
+//making this loop play for 10 seconds
+//how to set seed to get same set of randomly generated sounds every time: Math.srandom(150);
+
+while (now&lt;later){
+    Math.random2f(30,1000)=>s.freq;
+    
+    0.1::second=>now;
+    Math.random2f(20,80)=>u.freq;
+}
+
+//setting time 'much_later'
+now + 10::second=> time much_later;
+
+//setting gain for next part
+0.2=>s.gain;
+0.2=>t.gain;
+0=>u.gain;
+
+//another 10 seconds, another 2 loops
+
+while (now&lt;much_later){
+    for(60=>int i; i<=127; i++){
+        Std.mtof(i)=>float Hz;
+        &lt;&lt;&lt;i,Hz&gt;&gt;&gt;;
+        Hz=>s.freq;
+        Math.random2f(25,65)=>t.freq;
+        100::ms=>now;
+        
+    }
+    for(127=>int i; i>=60; i--){
+        Std.mtof(i)=>float Hz;
+        &lt;&lt;&lt;i,Hz&gt;&gt;&gt;;
+        Hz=>t.freq;
+        Math.random2f(25,65)=>s.freq;
+        100::ms=>now;
+    }
+}
+   </code>
+</pre> 
+<figcaption>#1: Audio Programming Experimentation (Code)</figcaption>
+</figure>
+		
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
