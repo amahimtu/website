@@ -31,10 +31,17 @@
 		    <div class="site-footer"><a href="https://www.linkedin.com/in/akshaymahimtura/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true" aria-label="LinkedIn"></i></a> <a href="https://soundcloud.com/mellowreindeer" target="_blank"><i class="fa fa-soundcloud fa-lg" aria-hidden="true" aria-label="SoundCloud"></i></a><small>&copy; 2020 Akshay Mahimtura</small></div>
 	</nav>
 	<main>
-		<h2>Audio Exploration</h2><br>
-        
-		<h3>#1</h3>
-        
+		<h2>Audio Exploration</h2>
+        <ul id="audio-list">
+        <li><a href="#audio1">#1</a></li>
+        <li><a href="#audio2">#2</a></li>
+        <!--<li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li> -->
+        </ul><hr>
+
+        <div id="audio1">
+
+		<h4>#1</h4>
 		<h4>My first foray into audio programming.</h4>
 		<p>I used a programming language called <a href="https://chuck.cs.princeton.edu/" target="_blank"> ChucK</a> to develop this composition. My aim was to play and experiment with code and computer science to generate sound/music (rather than to create a particularly pleasant-sounding composition).</p>
         <p>This piece uses three different types of sound waves to produce randomly-generated sound within set frequency ranges, but also follows established musical conventions, such as partially travelling up and down the chromatic scale.</p>
@@ -44,7 +51,7 @@
         <p>Your browser does not support HTML5 audio</p>
         </audio>
 
-        <p>Here's the code I wrote:</p>
+        <p>Here's the code I wrote for this:</p>
         <figure>
 		<pre>
 		<code>
@@ -134,11 +141,118 @@ while (now&lt;much_later){
 </pre> 
 <figcaption>#1: Audio Programming Experimentation (Code)</figcaption>
 </figure>
+</div>
+<hr>
+
+<div id="audio2">
+    <h4>#2</h4>
+    <h4>Composition in D# minor using arrays. </h4>
+    <p>This is a piece programmed with <a href="https://chuck.cs.princeton.edu/" target="_blank">ChucK</a> that uses arrays, panning, and MIDI note numbers.</p>
+    <audio controls>
+        <source src="composition2copy.wav" type="audio/wav">
+        <p>Experiment #2</p>
+        <p>Your browser does not support HTML5 audio</p>
+        </audio>
+        <p>Code:</p>
+        <figure>
+        <pre>
+        <code>
+&lt;&lt;&lt;"Author: Akshay Mahimtura"&gt;&gt;&gt;;
+
+//sound chain
+TriOsc s=> dac;
+SinOsc t=> Pan2 p => dac;
+
+//array declaration
+[51,54,58,59,56,57,63] @=> int A[]; //array with MIDI notes in D# minor to later be converted into frequencies (@ signals dynamism)
+[0.5,0.2,0.3,0.72,0.86,0.27,0.5] @=> float notes[];//time values in first loop
+
+//A.cap() is max number of elements in A
+
+&lt;&lt;&lt;A.cap()&gt;&gt;&gt;;
+0=>t.gain;
+-1.0=>float panPosition;
+
+//20 seconds
+now + 10::second => time later;
+
+//looping through the values of the array from L to R
+while (now&lt;later){
+    for (0=>int i; i&lt;A.cap(); i++){
+        &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
+
+        Std.mtof(A[i]) => s.freq; // MIDI to frequency
+        0.3=>s.gain; //setting gain
+        notes[i]::second=>now; //advance time
+    }
+}
+Math.srandom(526); //sets seed
+now + 15::second => time much_later; //set 'much later' time for another 15 seconds
+
+//loop(harmony)
+while (now&lt;much_later){
+    0.8=>t.gain; //set volume of t
+    Math.random2f(85,101.86)=>t.freq; //randomize frequency of 't' in this range
+    
+    //loop to pan 't' from L to R
+    while (panPosition > -1.0){
+        panPosition => p.pan; //pan value
+        &lt;&lt;&lt;panPosition&gt;&gt;&gt;;
+        panPosition - 0.01 => panPosition; //decrement
+        1::second=>now; //advance time
+    }
+    
+    //looping through values of array from R to L (not counting [6])
+    for (5=>int i; i>0; i--){
+        &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
+        Std.mtof(A[i]) => s.freq; // MIDI to frequency
+        0.3=>s.gain; //setting gain
+        1::second=>now; //advance time
+        
+    }
+}
+
+0=>t.gain; // shut 't' off
+
+//extra_late 
+now + 10::second => time extra_late;
+
+//repeat 1st loop
+while (now&lt;extra_late){
+    for (0=>int i; i&lt;A.cap(); i++){
+        &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
+        Std.mtof(A[i]) => s.freq; // MIDI to frequency
+        0.3=>s.gain; //setting gain
+        notes[i]::second=>now; //advance time
+    }
+}
+
+//closing few notes, in descending order from [5] to [1]
+for (5=>int i; i>=0; i--){
+    &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
+    Std.mtof(A[i]) => s.freq; // MIDI to frequency
+    0.3=>s.gain; //setting gain
+    0.6::second=>now; //advance time
+}
+
+</code>
+</pre>
+<figcaption>#2: Audio Programming Experimentation (Code)</figcaption>
+</figure>
+</div><hr>
+
+
+
+
+
+
+
+
 		
 
 
 
-
+</main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
