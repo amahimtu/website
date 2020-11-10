@@ -168,47 +168,42 @@ SinOsc t=> Pan2 p => dac;
 [0.5,0.2,0.3,0.72,0.86,0.27,0.5] @=> float notes[];//time values in first loop
 
 //A.cap() is max number of elements in A
-
-&lt;&lt;&lt;A.cap()&gt;&gt;&gt;;
+&lt;&lt;&lt;A.cap()&gt;&gt;&gt;
 0=>t.gain;
--1.0=>float panPosition;
+1.0=>float panPosition;
 
-//20 seconds
+//10 seconds
 now + 10::second => time later;
 
 //looping through the values of the array from L to R
 while (now&lt;later){
-    for (0=>int i; i&lt;A.cap(); i++){
+    for (0=&gt;int i; i&lt;A.cap(); i++){
         &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
-
         Std.mtof(A[i]) => s.freq; // MIDI to frequency
         0.3=>s.gain; //setting gain
         notes[i]::second=>now; //advance time
     }
 }
+
 Math.srandom(526); //sets seed
 now + 15::second => time much_later; //set 'much later' time for another 15 seconds
 
 //loop(harmony)
-while (now&lt;much_later){
-    0.8=>t.gain; //set volume of t
-    Math.random2f(85,101.86)=>t.freq; //randomize frequency of 't' in this range
+while (now&lt;much_later && panPosition &gt; -1.0){ //pan 't' from R to L
+    panPosition => p.pan; //pan value
+    &lt;&lt;&lt;panPosition&gt;&gt;&gt;; //print pan position
+    panPosition - 0.75 => panPosition; //decrement
+    0.001::second=>now; //advance time
     
-    //loop to pan 't' from L to R
-    while (panPosition > -1.0){
-        panPosition => p.pan; //pan value
-        &lt;&lt;&lt;panPosition&gt;&gt;&gt;;
-        panPosition - 0.01 => panPosition; //decrement
-        1::second=>now; //advance time
-    }
+    0.8=&gt;t.gain; //set volume of t
+    Math.random2f(85,101.86)=&gt;t.freq; //randomize frequency of 't' in this range
     
     //looping through values of array from R to L (not counting [6])
-    for (5=>int i; i>0; i--){
+    for (5=&gt;int i; i&gt;0; i--){
         &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
         Std.mtof(A[i]) => s.freq; // MIDI to frequency
-        0.3=>s.gain; //setting gain
+        0.3=&gt;s.gain; //setting gain
         1::second=>now; //advance time
-        
     }
 }
 
@@ -234,7 +229,6 @@ for (5=>int i; i>=0; i--){
     0.3=>s.gain; //setting gain
     0.6::second=>now; //advance time
 }
-
 </code>
 </pre>
 <figcaption>#2: Audio Programming Experimentation (Code)</figcaption>
