@@ -34,7 +34,8 @@
 		<h2>Audio Exploration</h2>
         <ul id="audio-list">
         <li><a href="#audio1">#1</a></li>
-        <li><a href="#audio2">#2</a></li>
+        <li><a href="#audio2">#2 (Techno Glitch)</a></li>
+        <!--<li><a href="#audio3">#3 (Techno Glitch)</a></li>-->
         <!--<li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li> -->
         </ul><hr>
@@ -56,8 +57,8 @@
 		<pre>
 		<code>
 &lt;&lt;&lt;"Author: Akshay Mahimtura"&gt;&gt;&gt;;
-//sound network
 
+//sound network
 SinOsc s=> dac;
 SawOsc t=> dac;
 SqrOsc u=> dac;
@@ -144,7 +145,7 @@ while (now&lt;much_later){
 </div>
 <hr>
 
-<div id="audio2">
+<!--<div id="audio2">
     <h4>#2</h4>
     <h4>Composition in D# minor using arrays. </h4>
     <p>This is a piece programmed with <a href="https://chuck.cs.princeton.edu/" target="_blank">ChucK</a> that uses arrays, panning, and MIDI note numbers.</p>
@@ -233,16 +234,106 @@ for (5=>int i; i>=0; i--){
 </pre>
 <figcaption>#2: Audio Programming Experimentation (Code)</figcaption>
 </figure>
-</div><hr>
+</div><hr> -->
+
+<div id="audio2">
+    <h4>#2</h4>
+    <h4>Techno Glitch</h4>
+    <p>Glitchy techno piece created by manipulating samples with <a href="https://chuck.cs.princeton.edu/" target="_blank">ChucK</a>. I recommend using headphones to listen to this composition as it features a low bassline.</p>
+    <audio controls controlsList="nodownload">
+        <source src="composition3copy.wav" type="audio/wav">
+        <p>Experiment #2</p>
+        <p>Your browser does not support HTML5 audio</p>
+        </audio>
+        <p>Code:</p>
+        <figure>
+        <pre>
+        <code>
+&lt;&lt;&lt;"Author: Akshay Mahimtura"&gt;&gt;&gt;;
+
+//sound chain
+Gain master=>dac; //master gain
+SndBuf kick => master;
+SndBuf hihat => master;
+SndBuf snare => master;
+SndBuf cowbell => Pan2 p => master;
+SinOsc k => master;
+
+//array declaration
+[41,40,33,38] @=> int A[]; //A-Minor MIDI Notes
 
 
+//load sound files into SndBuf
+me.dir() + "audio/kick_05.wav" => kick.read;
+me.dir() + "audio/hihat_02.wav" => hihat.read;
+me.dir() + "audio/snare_03.wav" => snare.read;
+me.dir() + "audio/cowbell_01.wav" => cowbell.read;
+
+//set all playheads to end so no sound is made
+kick.samples()=>kick.pos;
+hihat.samples()=>hihat.pos;
+snare.samples()=>snare.pos;
+cowbell.samples()=>cowbell.pos;
+0=>k.gain; //k is 0 volume
 
 
+//setting time 'later'
+now + 30::second=>time later;
+
+//initialize counter variable
+0=>int counter;
 
 
+//loop
+while (now&lt;later)
+{
+    //Sine Wave (bassline)
+    for (0=>int i; i&lt;A.cap(); i++){
+        &lt;&lt;&lt;i,A[i]&gt;&gt;&gt;; //print index and value
+        Std.mtof(A[i]) => k.freq; // MIDI to frequency
+        0.4=>k.gain; //setting gain
+    }
+
+    //beat goes from 0 to 7 (8 positions)
+    counter%8=>int beat;
+    
+    //bass drum on 0 and 4
+    if ((beat == 0) || (beat==4)) {
+        0=>kick.pos;
+        1=>kick.gain;
+    }
+    
+    //hihat
+    1=>hihat.pos;
+    Math.random2f(-0.5,1.3)=>hihat.rate; //manipulating hi-hat rate
+    
+    //snare drum on 4
+    if (beat==4)
+    {
+        0=>snare.pos;
+        Math.random2f(0.1,0.3)=>snare.rate; //manipulating snare rate
+    }
+    
+    //cowbell on 2
+    if (beat==2)
+    {
+        0=>cowbell.pos;
+        Math.random2f(0.5,1.75)=>cowbell.rate; //manipulating cowbell rate
+        Math.random2f(-0.8,0.8)=>p.pan; //set panning
+    }    
+   
+    &lt;&lt;&lt;"Counter:",counter,"Beat:",beat&gt;&gt;&gt;; //counting beats
+    counter++; //counter + 1
+    0.1::second=>now;  //advance time
+}    
+</code>
+        </pre>
+        <figcaption>#2: Audio Programming Experimentation — Glitchy Techno (Code)</figcaption>
+        </figure>
+    </div>
+    <hr>
 
 
-		
 
 
 
