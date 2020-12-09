@@ -1,3 +1,3 @@
 # Akshay Mahimtura
-Personal website
-© Akshay Mahimtura
+# Personal website
+# © Akshay Mahimtura
