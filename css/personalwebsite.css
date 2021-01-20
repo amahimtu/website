@@ -410,6 +410,10 @@ figcaption{
 }
 /* end of gallery */
 
+#add-synth{
+	width:85%;
+}
+
 /*button for scroll to top*/
 #myBtn {
   display: none; /* Hidden by default */
@@ -430,7 +434,6 @@ figcaption{
 #myBtn:hover {
   background-color: black; /* Add a dark-grey background on hover */
 }
-
 
 
 /* for mobile devices */
