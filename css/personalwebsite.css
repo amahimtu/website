@@ -35,7 +35,7 @@ nav a{
 	padding:2.3%;
 	padding-bottom:0.65rem;
 	transition:.5s color;
-	padding-left:3%;
+	padding-left:3%
 
 }
 nav{
@@ -114,9 +114,11 @@ h2{
 .fa-linkedin{
 	text-decoration:none;
 	color:#4875B4;
+	padding-left: 3%;
 }
 .fa-soundcloud{
 	color:#FE5000;
+	padding-left: 3%;
 }
 .fa-envelope{
 	color:#D44638;
