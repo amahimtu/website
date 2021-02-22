@@ -35,7 +35,7 @@ nav a{
 	padding:2.3%;
 	padding-bottom:0.65rem;
 	transition:.5s color;
-	padding-left:3%
+	padding-left:12%;
 
 }
 nav{
@@ -57,8 +57,23 @@ main{
 	
 	font-size:1.25em;
 	padding-left: 18%;
-	
 	line-height: 3rem;
+}
+
+p,li{
+	padding-right:9.6%;
+}
+
+.nopaddingright{
+	padding-right:0;
+}
+
+.nopadding{
+	padding: 0;
+}
+
+#nopad{
+	padding:0;
 }
 
 .site-footer{
@@ -70,12 +85,10 @@ main{
 }
 
 .about-me{
-	
 	font-size:1.25em;
 	padding-left:18%;
 	line-height: 3rem;
 }
-
 
 .music{
 	font-size:1.25em;
@@ -114,16 +127,17 @@ h2{
 .fa-linkedin{
 	text-decoration:none;
 	color:#4875B4;
-	padding-left: 3%;
+	padding-left: 12%;
 }
 .fa-soundcloud{
 	color:#FE5000;
-	padding-left: 3%;
+	padding-left: 12%;
 }
 .fa-envelope{
 	color:#D44638;
 	text-decoration:none;
 }
+
 li a{
 	text-decoration: none;
 	color:black;
@@ -147,6 +161,8 @@ small{
 	text-transform: capitalize;
 	text-decoration:none;
 	color:black;
+	display:inline-block;
+	padding-left:2.2rem;
 }
 
 #workexp{
@@ -438,6 +454,15 @@ figcaption{
 .content {
   background-color: white;
   padding: 10px;
+  border-radius: 10px;
+  box-shadow:
+  0 1.4px 2.2px rgba(0, 0, 0, 0.02),
+  0 3.3px 5.3px rgba(0, 0, 0, 0.028),
+  0 6.3px 10px rgba(0, 0, 0, 0.035),
+  0 11.2px 17.9px rgba(0, 0, 0, 0.042),
+  0 20.9px 33.4px rgba(0, 0, 0, 0.05),
+  0 50px 80px rgba(0, 0, 0, 0.07)
+;
 }
 
 /* Grow */
@@ -462,6 +487,10 @@ figcaption{
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
+  }
+
+  small{
+  	padding-left:1.6rem; /*padding for copyright text (tablet view)*/
   }
 }
 
