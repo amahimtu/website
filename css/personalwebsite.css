@@ -204,9 +204,7 @@ small{
 #dr{
 	text-transform: capitalize;
 }
-#uirprojectlink{
-	text-align:center;
-}
+
 pre {
     background: #f4f4f4;
     border: 1px solid #ddd;
@@ -261,7 +259,7 @@ pre {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
 }
 .social-menu ul li {
@@ -407,8 +405,19 @@ figcaption{
 #proto-button{
 	margin:0 auto;
 	display:block;
-	border-radius:5px;
+	border-radius:10px;
 	border:none;
+	text-transform: lowercase;
+}
+
+#view-project-button{
+	margin:0 auto;
+	display:block;
+	border-radius:10px;
+	border:none;
+	font-size:1.17em;
+	font-weight: bolder;
+	text-transform: lowercase;
 }
 
 /*portfolio gallery*/
