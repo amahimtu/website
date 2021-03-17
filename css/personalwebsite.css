@@ -423,10 +423,11 @@ figcaption{
 /*portfolio gallery*/
 .gallery {
   box-sizing: border-box;
-  background-color: #f1f1f1;
+  background-color: rgba(255,253,208,0.1);
   padding: 20px;
   padding-left:18%;
   
+  padding-top:0; /*Note: this line might be an issue when more projects are added*/
 }
 
 /* Center website*/
