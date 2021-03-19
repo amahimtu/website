@@ -113,6 +113,15 @@ h2{
 	padding-top: 0;
 }
 
+.proj-header{
+	color:#443e3c;
+}
+
+.proj-summary{
+	color:#443e3c;
+	opacity:0.9;
+}
+
 .contact-info{
 	font-size:1.25em;
 	padding-left:18%;
@@ -491,6 +500,7 @@ figcaption{
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  text-decoration: none;
 }
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
