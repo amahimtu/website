@@ -19,6 +19,12 @@ h1{
 	text-align: center;
 	color:#443e3c;
 	text-transform: capitalize;
+	margin-bottom: 0;
+}
+
+#headerdesc{
+	text-align: center;
+	margin-top: 0;
 }
 
 
@@ -63,6 +69,72 @@ main{
 p,li{
 	padding-right:9.6%;
 }
+
+/*highlight 1
+:root {
+  --highlight-vstart: 0.2em;
+  --highlight-vend: 1.2em;
+  --highlight-color: #ffdab9;
+  --highlight-range: 100%;
+}
+
+.highlight {
+  mix-blend-mode: multiply;
+  background: 
+    linear-gradient(to bottom,
+      white, 
+      white var(--highlight-vstart), 
+      transparent var(--highlight-vstart), 
+      transparent var(--highlight-vend), 
+      white var(--highlight-vend), 
+      white),
+
+    
+    linear-gradient(to right,
+      var(--highlight-color), 
+      var(--highlight-color) var(--highlight-range), 
+      white var(--highlight-range), 
+      white)
+  ;
+}
+*/
+
+/*.highlight1{    
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%,#ffdab9 50%);
+    background-position: 0% 0;
+
+    animation-name: highlight;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}
+*/
+
+/*highlight animation*/
+.highlight{
+    background-size: 200% auto; 
+    background-image: linear-gradient(to right,#fff 50%,#ffdab9 50%);
+    background-position: 0% 0;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.highlight.active1{
+   animation-name: highlight;
+}
+
+@keyframes highlight {
+    from {background-position: 0% 0;}
+    to {background-position: -100% 0;}
+}
+/*end highlight animation*/
 
 .nopaddingright{
 	padding-right:0;
@@ -147,6 +219,12 @@ h2{
 	text-decoration:none;
 }
 
+#env1{
+	color:#443e3c;
+	text-decoration:none;
+	padding-left:11.5%;
+}
+
 li a{
 	text-decoration: none;
 	color:black;
@@ -191,11 +269,15 @@ small{
 	text-transform: capitalize;
 }
 
-#vbm-cap{
+.vbm-cap{
 	text-transform: uppercase;
 }
 #products1,#products2,#products3{
 	width:80%;
+}
+
+#fmas-user-journey-map{
+	width:85%;
 }
 
 #sunset{
@@ -207,9 +289,10 @@ small{
 	min-width:100%;
 }
 
-#pi,#ostp{
+#pi,#ostp, #rj{
 	text-transform: uppercase;
 }
+
 #dr{
 	text-transform: capitalize;
 }
@@ -250,13 +333,17 @@ pre {
 	text-align: center;
 }
 
+#caption-like1{
+	text-align:center;
+	padding-left:10%;
+}
+
 #vbm-mockup{
 	width:75%;
 }
 #vbm-sitemap-img{
 	width:75%;
 }
-
 #vbm-prototype-pathways-img{
 	width:75%;
 }
@@ -537,18 +624,13 @@ padding-left:18%;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
   .column {
     width: 100%;
   }
  .gallery{
  	padding-left:5%;
- }
-@media
- #xdprototype{
- 	margin-left:0;
- 	
- }
+  }
  
 }
 /* end of gallery */
@@ -557,6 +639,17 @@ padding-left:18%;
 	width:85%;
 }
 
+#fmas-persona1,#fmas-persona2,#fmas-persona3,#fmas-persona4{
+	width:60%;
+}
+
+#fmas-storyboard, #fmas-crazy-eights, #fmas-sitemap, #fmas-digital-wireframes,#fmas-lo-fidelity-proto1{
+	width:75%;
+}
+
+#fmas-wireframe1, #fmas-wireframe2, #fmas-wireframe3, #fmas-wireframe4 {
+	width:75%;
+}
 
 
 /* for mobile devices */
@@ -574,7 +667,7 @@ padding-left:18%;
 	transition:.5s color;
 	
 
-}
+ }
 nav{
 	width:100vw;
 	overflow:auto;
@@ -588,29 +681,33 @@ nav{
 	align-items:center;
 	flex-wrap:wrap;
 
-}
+ }
 h2{
 	padding-top:12%;
-}
+ }
 main,.about-me,.music,.projects,.contact-info,.vacant,#sunset,#workexp{
 	padding-left:0;
-}
+ }
 .vacant{
 	padding:none;
 	width:100%
-}
+ }
 h2,h3,h4{
 	text-align:center;
-}
+ }
 
 p{
 	padding:2%;
 	
-}
+ }
+
+ #xdprototype{
+ 	margin-left:0;
+ }
 
 .site-footer{
 	display:none;
-}
+ }
 
 
 }

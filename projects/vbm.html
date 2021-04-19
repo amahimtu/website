@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vintage Band Merch | Projects | Akshay Mahimtura</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+    <!--js--<script src="../js/script1.js"></script>-->
+
     <meta name="description" content="Vintage Band Merch. Memorabilia for the realest fans. An e-commerce website by Akshay Mahimtura.">
 
     <!--Bootstrap--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -22,16 +27,17 @@
 </head>
 <body>
 	<header>
-	<a href="../index.html" id="pw"><h1>Akshay Mahimtura</h1></a>
+	<a href="../projects.html" id="pw"><h1>Akshay Mahimtura</h1></a>
+    <!--<h3 id="headerdesc">UX/UI Designer</h3>-->
 	</header>
 	<nav>
-			
-			<a href="../index.html">About</a>
+
 			<a href="../projects.html" class="active">Projects</a>
+			<a href="../about.html">About</a>
 			<a href="../music.html">Music</a>
 			<a href="../contact.html">Contact</a>
 
-		    <div class="site-footer"><a href="https://www.linkedin.com/in/akshaymahimtura/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true" aria-label="LinkedIn"></i></a> <a href="https://soundcloud.com/mellowreindeer" target="_blank"><i class="fa fa-soundcloud fa-lg" aria-hidden="true" aria-label="SoundCloud"></i></a><small>&copy; 2021 Akshay Mahimtura</small></div>
+		    <div class="site-footer"><a href="https://www.linkedin.com/in/akshaymahimtura/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true" title="LinkedIn"></i></a> <a href = "mailto: akshayhmahimtura@gmail.com"><i class="fa fa-envelope fa-lg" id="env1" aria-hidden="true" title="Send Email"></i></a><small>&copy; 2021 Akshay Mahimtura</small></div>
 	</nav>
 	<main>
 
@@ -39,13 +45,13 @@
 
     <h2><span id="vbm-title">Vintage Band Merch</span></h2>
     <h3><span id="dr">Memorabilia</span> for the realest fans.</h3><br>
-    <div><h3>Overview.</h3><p><span id="vbm-title">Vintage Band Merch</span> (<span id="vbm-cap">VBM</span>) is envisioned as the go-to e-commerce store for the resale of retro and vintage memorabilia. Musicians and music enthusiasts the world over love band merch (I know I do), but merch is often seasonal, and—especially for more popular artists—can get sold out quickly and are high in value. 
+    <div><h3>Overview.</h3><p><span id="vbm-title">Vintage Band Merch</span> (<span class="vbm-cap">VBM</span>) is envisioned as the go-to e-commerce store for the resale of retro and vintage memorabilia. Musicians and music enthusiasts the world over love band merch (I know I do), but merch is often seasonal, and—especially for more popular artists—can get sold out quickly and are high in value. 
 
-    <p>For instance, you can find Radiohead shirts from some of their old tours being sold for hundreds of dollars (roughly 4-5x their original value) online through websites like eBay and Etsy, meaning there is a market for cool vintage merch but no dedicated platform like <span id="vbm-cap">VBM</span>.</p>
+    <p>For instance, you can find Radiohead shirts from some of their old tours being sold for hundreds of dollars (roughly 4-5x their original value) online through websites like eBay and Etsy, meaning there is a market for cool vintage merch but no dedicated platform like <span class="vbm-cap">VBM</span>.</p>
 
     <div><img src="../images/vbm2.png" alt="Vintage Band Merch mockup" class="center" id="vbm-mockup"></div>
 
-    <p><span id="vbm-cap">VBM</span> appeals to your nostalgic longings by providing you with original vintage merchandise from huge bands like Matchbox Twenty to relatively low-key artists like Killing Time.</p>
+    <p><span class="vbm-cap">VBM</span> appeals to your nostalgic longings by providing you with original vintage merchandise from huge bands like Matchbox Twenty to relatively low-key artists like Killing Time.</p>
     <p>Note: This was a fun and challenging personal project I undertook to prototype the website for <span id="vbm-title">Vintage Band Merch</span>, whereas the actual site does not exist yet. However, I do own the domain (vintagebandmerch.com). I will walk you through my ui/ux design process leading up to the <a href="#vbm-prototype">prototype</a> of the website.</p>
     <p>Tools used: Figma, Adobe Photoshop, Lucidchart, HTML, CSS, Bootstrap.</div><br>
 
@@ -66,7 +72,7 @@
     <br>
 
     <div id="vbm-prototype"><h3>Prototype.</h3>
-    <p>Using the UI layout as a blueprint, I designed the mockup. I created the <span id="vbm-cap">VBM</span> logo—consisting of a vinyl record with the letters <span id="vbm-cap">VBM</span>—with Adobe Photoshop. For the hero images, I used artwork of Boards of Canada, Jimi Hendrix, and Steven Wilson, respectively.</p>
+    <p>Using the UI layout as a blueprint, I designed the mockup. I created the <span class="vbm-cap">VBM</span> logo—consisting of a vinyl record with the letters <span class="vbm-cap">VBM</span>—with Adobe Photoshop. For the hero images, I used artwork of Boards of Canada, Jimi Hendrix, and Steven Wilson, respectively.</p>
 
     <p>After creating all the sections of the site, I prototyped the dropdown menus, hero image slider, and product carousel. Check out the prototype pathways outlining various combinations of user interactions.</p>
     <figure><img id="vbm-prototype-pathways-img" src="../images/vbm-prototype-pathways.png" alt="Vintage Band Merch User Interaction Pathways" class="center"><figcaption><span id="vbm-title">Vintage Band Merch</span> User Interaction Pathways</figcaption></figure></div>
@@ -166,7 +172,6 @@
 <p>As a musician, this was such an enjoyable passion project to work on, as well as a great learning experience. I hope to make <span id="vbm-title">Vintage Band Merch</span> a fully realized e-commerce business one day.</p>
 <p>Thanks for checking out this project. I welcome <a href="../contact.html">feedback!</a></p>
 </div>
-
 
 
 
