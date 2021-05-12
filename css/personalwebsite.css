@@ -276,7 +276,7 @@ small{
 	width:80%;
 }
 
-#fmas-user-journey-map{
+#fmas-user-journey-map, #fmas-key-mockups-1, #fmas-key-mockups-2, #fmas-proto-2{
 	width:85%;
 }
 
@@ -639,11 +639,11 @@ padding-left:18%;
 	width:85%;
 }
 
-#fmas-persona1,#fmas-persona2,#fmas-persona3,#fmas-persona4{
+#fmas-persona1,#fmas-persona2,#fmas-persona3,#fmas-persona4, #fmas-mockup-contrast-check, #fmas-main-mockup{
 	width:60%;
 }
 
-#fmas-storyboard, #fmas-crazy-eights, #fmas-sitemap, #fmas-digital-wireframes,#fmas-lo-fidelity-proto1{
+#fmas-storyboard, #fmas-crazy-eights, #fmas-sitemap, #fmas-digital-wireframes, #fmas-early-low-fidelity-prototype, #fmas-affinity-diagram, #fmas-uxr, #fmas-revised-wireframes{
 	width:75%;
 }
 
