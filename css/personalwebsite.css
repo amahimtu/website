@@ -280,6 +280,11 @@ small{
 	width:85%;
 }
 
+#dom-ux-analysis{
+	height: 80vh;
+	width:70%;
+}
+
 #sunset{
 	padding-left:17.0%;
 
@@ -345,7 +350,7 @@ pre {
 	width:75%;
 }
 #vbm-prototype-pathways-img{
-	width:75%;
+	width:85%;
 }
 
 /*social menu for contact page only*/
@@ -651,6 +656,13 @@ padding-left:18%;
 	width:75%;
 }
 
+#dom-img{
+	width:75%;
+}
+
+#dom-img1{
+	width:45%;
+}
 
 /* for mobile devices */
 @media screen and (max-width:600px){
