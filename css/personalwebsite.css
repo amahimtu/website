@@ -25,6 +25,7 @@ h1{
 #headerdesc{
 	text-align: center;
 	margin-top: 0;
+	color: #56514f;
 }
 
 
@@ -294,7 +295,7 @@ small{
 	min-width:100%;
 }
 
-#pi,#ostp, #rj{
+#pi, #rj{
 	text-transform: uppercase;
 }
 
@@ -663,6 +664,19 @@ padding-left:18%;
 #dom-img1{
 	width:45%;
 }
+
+#saathi-img{
+	width:75%;
+}
+
+#saathi-img1{
+	width:85%
+}
+
+#saathi-img3{
+	width:60%;
+}
+
 
 /* for mobile devices */
 @media screen and (max-width:600px){

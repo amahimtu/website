@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saathi | Projects | Akshay Mahimtura</title>
+    <!--jquery--><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+
+    <!--js--<script src="../js/script1.js"></script>-->
+
+    <meta name="description" content="Saathi. Voice-controlled car dashboard by Akshay Mahimtura"><!--Fill later-->
+
+    <!--Bootstrap--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/personalwebsite.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bjd2zmg.css">
+    <script src="https://kit.fontawesome.com/7302c17786.js" crossorigin="anonymous"></script>
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <!--favicon-->
+</head>
+<body>
+    <header>
+    <a href="../projects.html" id="pw"><h1>Akshay Mahimtura</h1></a>
+    <!--<h3 id="headerdesc">UX and Product Designer</h3>-->
+    </header>
+    <nav>
+        
+            <a href="../projects.html" class="active">Projects</a>
+            <a href="../about.html">About</a>
+            <a href="../music.html">Music</a>
+            <a href="../contact.html">Contact</a>
+
+            <div class="site-footer"><a href="https://www.linkedin.com/in/akshaymahimtura/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true" title="LinkedIn"></i></a> <a href = "mailto: akshayhmahimtura@gmail.com"><i class="fa fa-envelope fa-lg" id="env1" aria-hidden="true" title="Send Email"></i></a><small>&copy; 2021 Akshay Mahimtura</small></div>
+    </nav>
+    
+<main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+<h2>Saathi: Voice-Controlled Car Dashboard.</h2>
+<h3>Making the driving experience in India easier, safer, and more comfortable.</h3><br>
+
+<div><h3>Overview.</h3>
+
+<p>I undertook this project in a team of seven during the Monsoon Course on HCI 2021 at the prestigious IIT-B, taught by Prof. Anirudha Joshi.</p>
+
+<p><b><span class="highlight">The Product:</b></span> A voice-controlled dashboard in cars for the Indian market. I came up with the name “Saathi” for this product, which means “companion” in Hindi, the most widely-used language in India.</p><br>
+
+<figure><img src="../images/saathi-home.png" id="saathi-img" alt="Saathi home screen mockup" class="center"><figcaption>Final Home Screen Mockup for Saathi</figcaption></figure><br>
+
+<p><b><span class="highlight">The Problem:</b></span> Many dashboards in cars available in India are unintuitive and distracting, whether they are touchscreen-based or consist of analog buttons/knobs (or both). These dashboards can be inconvenient and dangerous for users to use while driving (they require a considerable amount of attention), especially on the characteristically chaotic roads in the country. Even where users use voice technology to assist them while driving—such as with their smartphone maps—these voice-activated technologies seldom recognize Indian accents, dialects, and languages properly, if at all. Further, few dashboards in non-luxury cars are “smart” or personalized to their users.</p>
+
+<p><b><span class="highlight">The Goal:</b></span> To design a voice-controlled car dashboard that addresses the pain points and needs of users who drive regularly in India.</p>
+
+<p><b><span class="highlight">My Role:</b></span> Product Designer.</p>
+
+<p><b><span class="highlight">Project Duration:</b></span> June 2021</p>
+</div><br>
+
+<div><h3>Intial Design Brief.</h3>
+    <p>Here is the initial design brief for this project given to us by Prof. Anirudha Joshi.
+    <figure><img src="../images/initial-design-brief.png" alt="Inital design brief" class="center" id="saathi-img3"><figcaption>Initial Design Brief</figcaption></figure>
+    <p>We would later revise this brief to better reflect our user interviews and research.</p>
+</div><br>
+
+
+<div><h3>Contextual Inquiry: User Interviews.</h3>
+    <p>My team and I interviewed 10 participants living in cities across India, namely Bengaluru (Bangalore), Bhopal, Kerala, Kolkata (Calcutta), Mumbai (Bombay), and New Delhi. Each individual was recruited because they regularly drive a car that either they or a family member own, with the exception of participant BLR2, who is usually a passenger while her husband drives. The interviews were "contextual" because while they were conducted, users sat inside their cars and showed us their dashboards and driving habits. I interviewed participants BOM1 and BOM4, and observed and took notes for others. Each interview lasted 30-45 minutes.</p><br>
+    <figure><img src="../images/interview-recruit-list.png" alt="Interview Recruit List" class="center" id="saathi-img"><figcaption>Interview Recruit List</figcaption></figure>
+    <p>We asked participants questions pertaining to their driving habits, current dashboard usage and what they wished their dashboard could offer, issues they faced while driving in India, and more.</p>
+</div><br>
+
+<div><h3>Interview Interpretation.</h3>
+    <p>We then created a file containing multiple spreadsheets—one for each participant. Within each spreadsheet, we included our findings from the interviews after filtering out irrelevant information from our raw notes. We then categorized each finding or comment into user statements (US), observations (OB), breakdowns (i.e., when something goes wrong for the user), insights (IN), and design ideas (DI). Here is a screenshot of a portion of our interpretation of BOM4’s interview, which I conducted (the cells highlighted in yellow are breakdowns and design ideas for us to refer to easily later in the design process).</p><br>
+    <figure><img src="../images/bom4-interpretation.png" alt="Interpretation of Participant BOM4" class="center" id="saathi-img"><figcaption>Interpretation of Participant BOM4</figcaption></figure>
+</div><br>
+
+<div><h3>Affinity Mapping.</h3>
+    <p>After compiling and organizing our interview interpretations, we created an affinity map. Using the bottom-up or “space saturate and group” approach, we included some of our notes from the user interviews (taken from the spreadsheets) on stickies, “saturating” the Miro board. We then began to recognize patterns and “grouped” our affinity into relevant clusters under summary headings. Some clusters were further grouped under even broader summary headings (as seen on the left half of this board).</p><br>
+    <figure><img src="../images/saathi-affinity.jpg" alt="Affinity diagram for Saathi car dashboard based on user interviews" class="center" id="saathi-img1"><figcaption>Affinity Diagram/Map for Saathi</figcaption></figure><br>
+
+    <p>Here are some zoomed-in highlights from the affinity map:</p>
+    <figure><img src="../images/saathi-affinity-1.png" alt="Snippet of affinity diagram for Saathi car dashboard based on user interviews" class="center" id="saathi-img"><figcaption>Affinity Diagram Highlight: Safety</figcaption></figure><br>
+    <figure><img src="../images/saathi-affinity-2.png" alt="Snippet of affinity diagram for Saathi car dashboard based on user interviews" class="center" id="saathi-img"><figcaption>Affinity Diagram Highlight: Voice Technology Incorporation</figcaption></figure><br>
+    <p>Through affinity mapping as a team, we were able to see our data come to life and better understand the user needs to focus on as we started to design our dashboard.</p>
+</div><br>
+
+<div><h3>Important Research Findings.</h3>
+    <p>After evaluating the interview interpretations and affinity diagram, I summarized some of our key research findings:</p><br>
+    <figure><img src="../images/saathi-uxr-findings.png" alt="Key findings from user interviews and affinity mapping" class="center" id="saathi-img"><figcaption>Key Findings from User Interviews and Affinity Mapping</figcaption></figure><br>
+    <ul>
+        <li><span class="highlight"><b>The dashboard should understand Indian accents, dialects, languages, as well as speech impediments.</b></span></li>
+        <p>India is geographically, culturally, and linguistically diverse. In addition to the plethora of languages in India, people also have different accents when it comes to speaking English or Hindi. There is no singular Indian accent. Further, many voice-enabled devices do not understand users with speech impediments. Our dashboard’s voice-recognition technology would account for these factors.</p><br>
+
+        <li><span class="highlight"><b>Mood and emotion: the dashboard should be my friend.</b></span></li>
+        <p>Users want an interface that would connect with them, rather than a robotic, seemingly lifeless one.</p><br>
+
+        <li><span class="highlight"><b>Safety features like voice-activated emergency assistance.</b></span></li>
+        <p>Safety is important to many of our users and we will design safety features in the dashboard.</p><br>
+
+        <li><span class="highlight"><b>Navigation/map/GPS improvements.</b></span></li>
+        <p>Many users had specific navigation requirements, especially because driving and navigation in India can be chaotic.</p><br>
+
+        <li><span class="highlight"><b>Ease of parking.</b></span></li>
+        <p>Parking is another big issue for users, especially in cities. The dashboard should have features that help users park without hassle.</p><br>
+
+        <li><span class="highlight"><b>Road trip features.</b></span></li>
+        <p>Some of the users we interviewed are avid road trippers. We must include road trip features specific to the Indian landscape in our dashboard.</p><br>
+
+        <li><span class="highlight"><b>Balance of Voice and Touch.</b></span></li>
+        <p>While users were keen to embrace voice activated technology in their car dashboards, they were not ready to completely forgo the touch-screen. We had to make sure to account for this in our design.</p>
+    </ul>
+</div><br>
+
+<div><h3>Revised Design Brief.</h3>
+    <p>Based on our research and affinity diagram, I revised our design brief so that my team and I could refocus our design:</p><br>
+    <figure><img src="../images/saathi-revised-design-brief.png" alt="Revised design brief for -controlled dashboard, Saathi" class="center" id="saathi-img"><figcaption>Revised Design Brief for Saathi</figcaption></figure><br>
+    <p>Note: Indie Motors is a fictional automobile manufacturer that we created for this project.</p>
+    <p>Based on our findings so far, we also honed in on a target audience: Regular drivers in India, aged 18 to 50, with a budget of ₹8 to 20 lakh (approximately $10,000 to $30,000 USD).</p>
+</div><br>
+
+<div><h3>Goal Setting.</h3>
+    <p>Before moving on, my team and I felt it was important to step back for a minute, evaluate our project, and set goals to guide our focus and so that we have more specific targets to achieve.</p>
+    <b><span class="highlight">Product Goals.</span></b>
+    <p>After careful consideration of all our findings so far, I succinctly summed up our primary and secondary goals for our product, Saathi:</p><br>
+    <figure><img src="../images/saathi-product-goals.png" alt="Product goals set for Saathi" class="center" id="saathi-img"><figcaption>Product Goals Set for Saathi</figcaption></figure><br><br>
+
+    <b><span class="highlight">Business Goals.</span></b>
+    <p>We had to align our business goals with the product we were designing. To do this, we came up with a fictional automobile manufacturer called Indie Motors, who is creating the Saathi dashboard in its mid- to mid-premium range of cars. Here are the business goals:</p><br>
+    <figure><img src="../images/saathi-business-goals.png" alt="Business goals set for Saathi" class="center" id="saathi-img"><figcaption>Business Goals Set for Saathi</figcaption></figure><br><br>
+    
+
+    <b><span class="highlight">User Experience Goals.</span></b>
+    <p>We utilized a user experience goal setting form, which is part of a Usability Goal Setting Tool (UGT) created by HCI practitioners including Prof. Joshi. This helped us prioritize the goals we had in mind for the user as they interact with our product, Saathi. Here is a portion of the form that we filled out which focuses on learnability:</p>
+
+    <figure><img src="../images/saathi-ux-goals.png" alt="User experience goal setting tool for Saathi" class="center" id="saathi-img"><figcaption>Snippet of User Experience Goals Set for Saathi</figcaption></figure><br>
+
+    <p>To learn more about this goal-setting tool and its evaluation criteria, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiN68We5JzxAhXLUt8KHYh3BpwQFjAKegQIBBAD&url=http%3A%2F%2Fwww.idc.iitb.ac.in%2F~anirudha%2Fpdfs%2Fusability%2520goals%2520setting%2520tool%25203.4.pdf&usg=AOvVaw1KHpuWeqP4RYTvukJR1_hf">click here.</a></p>
+
+</div><br>
+
+<div><h3>Personas.</h3>
+    <p>We created three personas: Raja, Dinesh, and Preity. Each persona represents a different set of users that we interviewed. As such, each persona has different pain points, needs, goals, and behaviors.</p><br>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100, center" src="../images/saathi-persona1.png" id="saathi-img1" alt="Persona 1: Raja Banerjee, the everyday commuter">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 id="slide-caption"></h5>
+                <p id="slide-caption"></p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-persona2.png" id="saathi-img1" alt="Persona 2: Dinesh Wagle, the road tripper">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-persona3.png" id="saathi-img1" alt="Persona 3: Preity Kumar, the lone lady">
+        </div>
+        <!--<div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/vbm-homepage-2.png" alt="Vintage Band Merch Products 2">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/vbm-homepage-3.png" alt="Vintage Band Merch Products 3">
+        </div>-->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<p id="caption-like1">User Personas: Raja, Dinesh, and Preity</p><br>
+
+
+Creating these personas would help us generate ideas for our designs while identifying with our target users.
+</div><br>
+
+
+
+
+<div><h3>Scenarios.</h3>
+<p>Our next step was to create user scenarios for our personas to understand how users might interact with Saathi to achieve their goals. With input from my teammates, I wrote the following scenarios (illustrations by Ujjwal Mahajan).</p>
+</p><br>
+
+<p><b>Scenario 1:</b></p>
+<p><b>Raja drives to work every day but is frustrated by his unintuitive, cluttered dashboard.</b></p>
+
+<figure><img src="../images/raja-scenario-before-1.png" alt="Raja's car journey before Saathi (1/2)" class="center" id="saathi-img1"><figcaption>Raja's journey before Saathi (1/2)</figcaption></figure>
+<figure><img src="../images/raja-scenario-before-2.png" alt="Raja's car journey before Saathi (2/2)" class="center" id="saathi-img1"><figcaption>Raja's journey before Saathi (2/2)</span></figcaption></figure><br>
+
+<p><b>How our dashboard makes Raja’s driving experience personalized, simple, and non-distracting:</b></p>
+<figure><img src="../images/raja-after-scenario-1.png" alt="Raja's car journey after Saathi (1/2)" class="center" id="saathi-img1"><figcaption>Raja's journey after Saathi (1/2)</figcaption></figure>
+<figure><img src="../images/raja-after-scenario-2.png" alt="Raja's car journey after Saathi (2/2)" class="center" id="saathi-img1"><figcaption>Raja's journey after Saathi (2/2)</figcaption></figure><br><br>
+
+<p><b>Scenario 2:</b></p>
+
+<p><b>Dinesh, an avid road tripper and driving enthusiast, is on a long drive but encounters a number of stumbling blocks.</b><br>
+
+(Note: FASTag is an electronic toll collection system in India, like E-ZPass in North America.)</p>
+
+<figure><img src="../images/dinesh-scenario-before.png" alt="Dinesh's car journey before Saathi" class="center" id="saathi-img1"><figcaption>Dinesh's journey before Saathi</figcaption></figure><br>
+
+<p><b>How our voice-controlled dashboard, Saathi, makes Dinesh’s road trip smooth, safe, and hurdle-free:</b></p>
+<figure><img src="../images/dinesh-scenario-after.png" alt="Dinesh's car journey after Saathi" class="center" id="saathi-img1"><figcaption>Dinesh's journey after Saathi</figcaption></figure><br>
+
+</div>
+<br><br>
+
+<div><h3>User Flow.</h3>
+    <p>I created user flows to map out pathways that users might take when interacting with Saathi. Since Saathi is so versatile, there are many different possible user flows depending on the user’s needs. For instance, someone who is driving a short distance to pick up groceries may have a completely different interaction with the dashboard than someone who is taking a road trip.</p>
+    <p>The following user flow is based on Raja’s (i.e., the everyday commuter driving to work) interaction with Saathi.</p>
+
+    <figure><img src="../images/saathi-raja-user-flow.png" alt="User Flow for Raja persona" class="center" id="saathi-img1"><figcaption>User Flow for an Everyday Driver Like Raja</figcaption></figure>
+
+    <p>Creating such user flows would help us create an intuitive interface while working on our interactive design.</p>
+
+</div><br>
+
+<div><h3>Early Concepts.</h3>
+    <p>At this point in the project, we had set goals, gathered a lot of data, and had many ideas to implement in our voice-controlled dashboard. My team and I decided to sketch out some concepts for Saathi, without limiting ourselves to any guidelines or criteria. That way, we could get the creative juices flowing.</p><br>
+    <figure><img src="../images/saathi-concepts.png" alt="Early concepts (sketches and rough digital designs) for Saathi" class="center" id="saathi-img"><figcaption>Early Concepts (Sketches and Rough Digital Designs) for Saathi</figcaption></figure><br>
+    <p>After coming up with these concepts, we were left with some good ideas that we decided to keep (such as car status and safety features, and facial recognition log-in), and others that we were compelled to discard as they went against our goals (such as a curved touchscreen with entertainment apps).</p>
+</div><br>
+
+
+<div><h3>Initial Prototype.</h3>
+  <p>Here are the mockups from the initial prototype my team and I came up with. While we felt that we had most of the features that we determined that the dashboard should have (based on our findings so far), we were not yet content with the user interface and information architecture at this stage. That said, after adding interactivity to these mockups, we had enough to be able to test this initial prototype on real potential users.</p><br>
+
+    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+      <!--<ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100, center" src="../images/saathi-initial1.png" id="saathi-img" alt="Saathi Initial Prototype">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 id="slide-caption"></h5>
+                <p id="slide-caption"></p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial2.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial3.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial4.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial5.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial6.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial7.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial8.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial9.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-initial10.png" id="saathi-img" alt="Saathi Initial Prototype">
+        </div>
+
+        </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><br>
+
+<p id="caption-like">10 Initial Screen Mockups: Splash, Face Recognition, Profile Login, Home, FASTag Recharge, Call Screen, Map, Music, Car Vitals/System Status, SOS/Emergency</p>
+
+</div><br>
+
+<div><h3>Design Evaluation: Usability Testing.</h3>
+<p>We needed to evaluate our designs through usability testing on real potential users. For this, we re-recruited three of the participants we interviewed in the early stages of the project: BLR1, BHP1, and BOM4. These three users closely matched many of the criteria in our personas. I observed and took notes for the first two tests, and served as the moderator for the last one.</p>
+<p>Before the study, we provided our users with two realistic use cases of Saathi which I wrote, so that they could get a solid idea of how our product might be used in real-world scenarios. While we called them “scripts," users did not have to adhere to these.</p><br>
+<figure><img src="../images/saathi-scripts.png" alt="Scripts/use cases for users to refer to prior to usability testing" class="center" id="saathi-img1"><figcaption>Scripts/Use Cases for Users to Refer to Prior to Usability Testing</figcaption></figure><br>
+<p>Due to the voice-based nature of our prototype, we conducted a Wizard-of-Oz style usability test, with one of our team members acting as Saathi. Since the test was conducted over a video conference, users could not see this teammate (who was sharing his screen, which displayed the prototype). Users would interact with him and he responded in Saathi-like fashion via voice modulation software. This ensured that there was little to no lag and gave Saathi the companion-like feel that we wanted to incorporate in it.</p>
+<p>Users could communicate with Saathi by saying things like:</p>
+<ul>
+    <li>“Hi Saathi, let’s go on a road trip.”</li>
+    <li>“Hi Saathi, show me the fastest route to work.”</li>
+    <li>“Hi Saathi, SOS. This is an emergency.”</li>
+</ul>
+<p>Saathi responded to the user verbally and the screens changed accordingly (with our teammate controlling the prototype interaction behind the scenes).</p>
+
+
+</div><br>
+
+<div><h3>Usability Testing: Findings, Key Performance Indicators, and Analysis.</h3>
+<p>I created a key performance indicator (KPI) tool to evaluate our design. Participants were requested to answer these questions immediately after the usability test. Some questions required ratings between 1 and 5 whereas some were open-ended. Each question was crafted so that users could help us refine the design of Saathi according to our revised design brief.</p><br>
+<figure><img src="../images/saathi-kpi.png" alt="Key performance indicators for Saathi" class="center" id="saathi-img1"><figcaption>Key performance indicators for Saathi</figcaption></figure><br>
+
+<p>While we got a lot of positive feedback (after all, many of the product features were incorporated from inforamtion gathered during user interviews), they also gave us a lot of insight into how we could improve our design for Saathi. Here are some quotes from users about their experience while testing the product:</p>
+<figure><img src="../images/saathi-ut-quotes.png" alt="User quotes from usability test" class="center" id="saathi-img1"><figcaption>User Quotes From Usability Test</figcaption></figure><br>
+
+<p>I made notes of users’ feedback and we highlighted key changes to include or strongly consider including in our revised prototype. Here's a snippet of that process:</p>
+<figure><img src="../images/saathi-ut-findings.png" alt="Snippet of user comments and analysis from usability test" class="center" id="saathi-img"><figcaption>Snippet of User Comments & Analysis From Usability Test</figcaption></figure><br>
+
+</div><br>
+
+
+<div><h3>Final Prototype.</h3>
+    <p>Here are some mockups from the drastically improved final prototype (compared to the initial, pre-usability test one) that we created. We implemented many of the changes that we decided upon after usability testing and evaluating our design—from a simple ‘dark mode’ theme to a decluttered home screen.</p><br>
+
+    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+      <!--<ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100, center" src="../images/saathi-splash.png" id="saathi-img" alt="Saathi final splash screen">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 id="slide-caption"></h5>
+                <p id="slide-caption"></p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-home.png" id="saathi-img" alt="Saathi final home screen">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-call.png" id="saathi-img" alt="Saathi final call screen">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-map.png" id="saathi-img" alt="Saathi final map screen">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-music.png" id="saathi-img" alt="Saathi final music screen">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-system.png" id="saathi-img" alt="Saathi final system status/car vitals screen">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-sos.png" id="saathi-img" alt="Saathi final SOS/emergency screen">
+        </div>
+
+
+        </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><br>
+
+<p id="caption-like">Seven Final Screen Mockups: Splash, Home, Call Screen, Map, Music, Car Vitals/System Status, SOS/Emergency</p><br>
+
+<p>Now I will walk you through the actual changes that we implemented based on users’ feedback from the usability test, as annotated in the images below: 
+
+    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+      <!--<ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100, center" src="../images/saathi-splash-annotated.png" id="saathi-img1" alt="Saathi final splash screen with annotations">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 id="slide-caption"></h5>
+                <p id="slide-caption"></p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-home-annotated.png" id="saathi-img1" alt="Saathi final home screen with annotations">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-call-annotated.png" id="saathi-img1" alt="Saathi final call screen with annotations">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-map-annotated.png" id="saathi-img1" alt="Saathi final map screen with annotations">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-music-annotated.png" id="saathi-img1" alt="Saathi final music screen with annotations">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-system-annotated.png" id="saathi-img1" alt="Saathi final system status/car vitals screen with annotations">
+        </div>
+
+        <div class="carousel-item">
+            <img class="d-block w-100, center" src="../images/saathi-sos-annotated.png" id="saathi-img1" alt="Saathi final SOS/emergency screen with annotations">
+        </div>
+
+
+        </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><br>
+
+<p id="caption-like">Seven Final Screen Mockups: Splash, Home, Call Screen, Map, Music, Car Vitals/System Status, SOS/Emergency</p><br>
+
+</div></br>
+
+<div><h3>Reflection & Takeaways.</h3>
+<ul>
+    <li><span class="highlight"><b>Working in a multidisciplinary team is rewarding</b></span>
+        (Everyone has something to offer).<br>
+        <p>I collaborated on this project with people from different backgrounds and skill-sets. Some were already working in UX- or UX-related fields, while others weren’t. Still, we were able to successfully leverage everyone’s skills, from illustration to project management. In addition to my UX and product design skills, my background in marketing helped me with this project as I wrote a lot of the content and shaped many of the business aspects of Saathi.</p></li>
+    <li><span class="highlight"><b>Our best guesses are not good enough</b></span>
+        (Never underestimate user interviews and usability testing).<br>
+        <p>Even though some of us had experience in UX, we were floored by the amount of excellent and surprising insights our users had to offer, and we iterated our designs accordingly. Many assumptions ("guesses") our team made were debunked along the way. After all, users are not designers.</p></li>
+    <li><span class="highlight"><b>The design process is often ugly</b></span>
+        (Enjoy it).<br>
+        <p>On the road to our final design, we had many raw sketches and strange ideas crop up, not to mention skirmishes within the team due to differing opinions. I learned to appreciate these aspects of the design process. These ‘ugly’ or seemingly undesirable parts of collaborative design helped us consider more possibilities and create an even better final design.</p></li>
+</ul>
+<p>This was a challenging project to work on that required plenty of lateral thinking. Thank you for checking it out. I welcome <a href="../contact.html">feedback!</a></p>
+</div>
+
+
+
+
+<script src="../js/scrolltotop.js"></script>
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
