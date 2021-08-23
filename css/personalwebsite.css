@@ -31,7 +31,6 @@ h1{
 	color: #696462;
 }
 
-
 .active{
 	text-decoration:underline;
 }
@@ -228,7 +227,7 @@ h3{
 	color:#443e3c;
 }
 
-p{
+p, li{
 	color: #443e3c;
 }
 
