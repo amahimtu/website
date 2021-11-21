@@ -500,7 +500,7 @@ pre {
 	padding: 20px;
 }
 
-#saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4 {
+#saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4, #fmas1, #fmas2, #fmas3, #fmas4, #fmas5, #vbm1, #vbm2, #vbm3{
 	position: sticky;
 	top: 0;
 	z-index: 10;
