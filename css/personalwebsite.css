@@ -888,7 +888,7 @@ padding-left:18%;
 
  }
 
- h3{
+ h2,h3{
  	padding-right: 0;
  }
 
@@ -927,6 +927,14 @@ h2,h3,h4{
 p{
 	padding:2%;
  }
+
+#caption-like{
+	padding-left: 0%;
+}
+
+#caption-like1{
+	padding-left:0%;
+}
 
  #xdprototype{
  	margin-left:0;
