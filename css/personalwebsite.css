@@ -80,12 +80,6 @@ p,li{
 	padding-right:16%;
 }
 
-@media screen and (min-width: 1920px) {
-	p,li{
-		padding-right: 24%;
-	}
-}
-
 
 .btn{
   background: #2C4461;
@@ -945,6 +939,25 @@ p{
 	display:none;
  }
 
+}
+
+/*large screens*/
+
+@media screen and (min-width: 1920px) {
+	h2, h3, p,li{
+		padding-right: 32%;
+	}
+
+
+#caption-like{
+	text-align: center;
+	padding-left: 32%;
+}
+
+#caption-like1{
+	text-align:center;
+	padding-left:32%;
+}
 
 }
 /* end */
