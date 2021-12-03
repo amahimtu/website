@@ -13,7 +13,7 @@ body{
 }
 
 p{
-	line-height: 215%;
+	line-height: 210%;
 }
 
 header{}
@@ -73,7 +73,7 @@ nav a:hover{
 main{
 	font-size:1.25em;
 	padding-left: 24%;
-	line-height: 200%;
+	line-height: 210%;
 }
 
 p,li{
@@ -303,7 +303,6 @@ text-decoration: none;
 .about-me{
 	font-size:1.25em;
 	padding-left:22%;
-	line-height: 3rem;
 }
 
 .music{
@@ -515,11 +514,12 @@ pre {
 
 #caption-like{
 	text-align: center;
+	padding-left: 18%;
 }
 
 #caption-like1{
 	text-align:center;
-	padding-left:10%;
+	padding-left:18%;
 }
 
 #vbm-mockup{
@@ -688,6 +688,7 @@ figcaption{
 	display:block;
 	border-radius:10px;
 	border:none;
+	padding: 8px;
 }
 
 #view-project-button{
@@ -697,6 +698,7 @@ figcaption{
 	border:none;
 	font-size:1.17em;
 	font-weight: bolder;
+	padding: 8px;
 }
 
 /*card deck*/
