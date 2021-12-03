@@ -6,12 +6,14 @@
 
 body{
 	font-family: roboto-condensed, Helvetica, Arial;
-	line-height: 1.55rem;
 	display:block;
 	margin:0;
 	background-color: #fffef9;
 	/*background-color:rgba(255,253,208,0.1);*/
-	text-transform: lowercase;
+}
+
+p{
+	line-height: 215%;
 }
 
 header{}
@@ -19,15 +21,21 @@ header{}
 h1{
 	text-align: center;
 	color:#443e3c;
-	text-transform: capitalize;
+	text-transform: lowercase;
 	margin-bottom: 0;
+	font-weight: 600;
+	font-size: 36px;
 }
 
 #headerdesc{
+	text-transform: lowercase;
 	text-align: center;
 	font-size: 1.5em;
 	margin-top: 0px;
 	color: #696462;
+	font-family: roboto-condensed, Helvetica, Arial;
+	padding-bottom: 10px;
+	padding-right: 0;
 }
 
 .active{
@@ -50,7 +58,7 @@ nav{
 	display:inline-block;
 	height:100vh;
 	overflow:auto;
-	width:17%;
+	width:20%;
 	box-sizing: border-box;
 	background-image:linear-gradient(to right,#eeeceb,rgba(184,184,184,0.6));
 	padding-top:2%;
@@ -64,23 +72,20 @@ nav a:hover{
 
 main{
 	font-size:1.25em;
-	padding-left: 20%;
-	line-height: 3rem;
+	padding-left: 24%;
+	line-height: 200%;
 }
 
 p,li{
-	padding-right:12%;
+	padding-right:16%;
 }
 
 @media screen and (min-width: 1920px) {
-	p, li{
-		padding-right: 20%;
+	p,li{
+		padding-right: 24%;
 	}
 }
 
-button{
-	text-transform:lowercase;
-}
 
 .btn{
   background: #2C4461;
@@ -297,14 +302,13 @@ text-decoration: none;
 
 .about-me{
 	font-size:1.25em;
-	padding-left:20%;
+	padding-left:22%;
 	line-height: 3rem;
 }
 
 .music{
 	font-size:1.25em;
-	padding-left:20%;
-	line-height: 3rem;
+	padding-left:22%;
 	text-decoration:none;
 	color:#443e3c;
 }
@@ -318,25 +322,32 @@ h2{
 	padding-top:1.15%;
 	text-align: left;
 	color:#443e3c;
+	font-family: 'Archivo', sans-serif;
+	font-size: 28px;
+	padding-right: 16%;
 }
 
 h3{
 	color:#443e3c;
+	font-family: 'Archivo', sans-serif;
+	padding-right: 16%;
 }
 
 p, li{
 	color: #443e3c;
+	padding-right: 16%;
 }
 
 .projects{
 	font-size:1.25em;
-	padding-left:20%;
-	line-height: 3rem;
+	padding-left:22%;
 	padding-top: 0;
 }
 
 .proj-header{
 	color:#443e3c;
+	font-family: roboto-condensed, Helvetica, Arial;
+	padding-right: 0;
 }
 
 .proj-summary{
@@ -346,8 +357,7 @@ p, li{
 
 .contact-info{
 	font-size:1.25em;
-	padding-left:20%;
-	line-height: 3rem;
+	padding-left:22%;
 	padding-top: 0;
 
 }
@@ -394,7 +404,7 @@ li a{
 
 .vacant{
 	width:95%;
-	padding-left:20%;
+	padding-left:22%;
 	padding-top:2%;
 }
 
@@ -404,10 +414,6 @@ small{
 	color:black;
 	display:inline-block;
 	padding-left:2.2rem;
-}
-
-#workexp{
-	padding-left: 18%;
 }
 
 #project_list{
@@ -444,7 +450,7 @@ small{
 }
 
 #sunset{
-	padding-left:17.0%;
+	padding-left:20.0%;
 
 }
 
@@ -498,6 +504,7 @@ pre {
 	display: block;
 	background-color: #fffef9;
 	padding: 20px;
+	font-family: roboto-condensed, Helvetica, Arial;
 }
 
 #saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4, #fmas1, #fmas2, #fmas3, #fmas4, #fmas5, #vbm1, #vbm2, #vbm3{
@@ -681,7 +688,6 @@ figcaption{
 	display:block;
 	border-radius:10px;
 	border:none;
-	text-transform: lowercase;
 }
 
 #view-project-button{
@@ -691,7 +697,6 @@ figcaption{
 	border:none;
 	font-size:1.17em;
 	font-weight: bolder;
-	text-transform: lowercase;
 }
 
 /*card deck*/
@@ -718,7 +723,7 @@ padding-left:18%;
   box-sizing: border-box;
   background-color: rgba(255,253,208,0.1);
   padding: 20px;
-  padding-left:20%;
+  padding-left:22%;
 
   padding-top:0; /*Note: this line might be an issue when more projects are added*/
 }
@@ -881,6 +886,10 @@ padding-left:18%;
 
  }
 
+ h3{
+ 	padding-right: 0;
+ }
+
 nav{
 	width:100vw;
 	overflow:auto;
@@ -897,7 +906,6 @@ nav{
 
 h2{
 	padding-top:16%;
-	font-weight: bold;
  }
 
 main,.about-me,.music,.projects,.contact-info,.vacant,#sunset,#workexp{
@@ -916,7 +924,6 @@ h2,h3,h4{
 
 p{
 	padding:2%;
-
  }
 
  #xdprototype{
