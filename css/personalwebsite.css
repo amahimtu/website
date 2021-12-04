@@ -13,7 +13,7 @@ body{
 }
 
 p{
-	line-height: 210%;
+	line-height: 190%;
 }
 
 header{}
@@ -73,7 +73,7 @@ nav a:hover{
 main{
 	font-size:1.25em;
 	padding-left: 22%;
-	line-height: 210%;
+	line-height: 190%;
 }
 
 p,li{
