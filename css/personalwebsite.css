@@ -173,6 +173,9 @@ text-decoration: none;
   color: #8e909b;
 }
 
+.my-role{
+	margin-left: 50px;
+}
 
 @media screen and (max-width: 768px) {
   .rc_nav a {display: none;}
@@ -501,7 +504,7 @@ pre {
 	font-family: roboto-condensed, Helvetica, Arial;
 }
 
-#saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4, #fmas1, #fmas2, #fmas3, #fmas4, #fmas5, #vbm1, #vbm2, #vbm3{
+#saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4, #fmas1, #fmas2, #fmas3, #fmas4, #fmas5, #vbm1, #vbm2, #vbm3, #tcare1,#tcare2,#tcare3,#tcare4 {
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -864,6 +867,17 @@ padding-left:18%;
 	width:60%;
 }
 
+#tcare-img{
+	width: 75%;
+}
+
+#tcare-img2{
+	width: 85%;
+}
+
+#tcare-img3{
+	width: 90%;
+}
 
 
 /* for mobile devices */
