@@ -879,6 +879,14 @@ padding-left:18%;
 	width: 90%;
 }
 
+#tcare-img4{
+	width: 30%;
+}
+
+#tcare-img5{
+	width: 60%;
+}
+
 
 /* for mobile devices */
 @media screen and (max-width:600px){
