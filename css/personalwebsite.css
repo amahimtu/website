@@ -760,7 +760,7 @@ padding-left:18%;
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: #f5f5f5; /*whitesmoke*/
   padding: 10px;
   border-radius: 10px;
   box-shadow:
