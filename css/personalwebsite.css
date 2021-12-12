@@ -66,7 +66,7 @@ nav{
 	position:fixed;
 }
 nav a:hover{
-	color:white;
+	color: white;
 }
 
 
@@ -942,7 +942,7 @@ h2,h3,h4{
  }
 
 p{
-	padding:2%;
+	padding:4%;
  }
 
 #caption-like{
@@ -960,7 +960,6 @@ p{
 .site-footer{
 	display:none;
  }
- 
  
 }
 
