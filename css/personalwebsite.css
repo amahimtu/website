@@ -505,9 +505,9 @@ pre {
 }
 
 #saa1, #saa2, #saa3, #saa4, #saa5, #saa6, #saa7, #saa8, #dom1, #dom2, #dom3, #dom4, #fmas1, #fmas2, #fmas3, #fmas4, #fmas5, #vbm1, #vbm2, #vbm3, #tcare1,#tcare2,#tcare3,#tcare4 {
-	position: sticky;
+	/*position: sticky;*/
+	/*z-index: 10;*/
 	top: 0;
-	z-index: 10;
 }
 
 #caption-like{
