@@ -406,11 +406,11 @@ li a{
 }
 
 small{
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	text-decoration:none;
 	color:black;
 	display:inline-block;
-	padding-left:2.2rem;
+	padding-left: 2.85rem;
 }
 
 #project_list{
@@ -799,8 +799,15 @@ padding-left:18%;
   }
 
   small{
-  	padding-left:1.6rem; /*padding for copyright text (tablet view)*/
+  	padding-left:1.5rem; /*padding for copyright text (tablet view)*/
   }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1399px){
+	small{
+		padding-left: 20%;
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -960,7 +967,48 @@ p{
 .site-footer{
 	display:none;
  }
- 
+
+/*reponsive images
+
+/*for saathi and tcare
+#tcare-img, #tcare-img2, #tcare-img5, #saathi-img, #saathi-img1, #saathi-img3{
+	height: auto;
+	min-width: 98%;
+}*/
+
+/*for fmas
+#fmas-persona1,#fmas-persona2,#fmas-persona3,#fmas-persona4, #fmas-mockup-contrast-check, #fmas-user-journey-map, #fmas-key-mockups-1, #fmas-key-mockups-2, #fmas-proto-2, #fmas-ob-sh, #fmas-storyboard, #fmas-crazy-eights, #fmas-sitemap, #fmas-digital-wireframes, #fmas-early-low-fidelity-prototype, #fmas-affinity-diagram, #fmas-uxr, #fmas-revised-wireframes, #fmas-ca, #fmas-wireframe1, #fmas-wireframe2, #fmas-wireframe3, #fmas-wireframe4 {
+	height: auto;
+	min-width: 98%;
+}*/
+
+/*for dom
+#dom-ux-analysis, #dom-img, #dom-img2, #dom-img4{
+	height: auto;
+	min-width: 98%;
+}
+
+#dom-img3{
+	height: auto;
+	min-width: 35%;
+}
+
+#dom-img1{
+	height: auto;
+	min-width: 75%;
+}*/
+
+/*for vbm
+#vbm-mockup, #vbm-sitemap-img, #vbm-prototype-pathways-img, #products1, #products2, #products3{
+	height: auto;
+	min-width: 98%;
+}
+
+#vbm-homepage1, #vbm-homepage2, #vbm-homepage3, #vbm-wireframe-img, #vbm-ui-layout-img{
+	height: auto;
+	min-width: 75%;
+}*/
+
 }
 
 /*large screens*/
