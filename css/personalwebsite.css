@@ -60,13 +60,15 @@ nav{
 	overflow:auto;
 	width:20%;
 	box-sizing: border-box;
-	background-image:linear-gradient(to right,#eeeceb,rgba(184,184,184,0.6));
+	background-color:#eeeceb;
+	/*background-image:linear-gradient(to right,#eeeceb,rgba(184,184,184,0.6));*/
 	padding-top:2%;
 	border-radius:2.5px;
 	position:fixed;
 }
 nav a:hover{
 	color: white;
+	/*color: #D40202;*/
 }
 
 
@@ -671,7 +673,7 @@ figcaption{
   background-color: #555; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0px; /* no padding */
+  padding: 4px 4px 4px 4px; /* some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 16px; /* Increase font size */
   opacity:0.9;
@@ -919,6 +921,7 @@ padding-left:18%;
 nav{
 	width:100vw;
 	overflow:auto;
+	/*background-color: #eeeceb;*/
 	background-image:linear-gradient(to bottom,#eeeceb,rgba(184,184,184,0.6));
 	height:7.0%;
 	border-radius:2.5px;
