@@ -66,6 +66,7 @@ nav{
 	border-radius:2.5px;
 	position:fixed;
 }
+
 nav a:hover{
 	color: white;
 	/*color: #D40202;*/
@@ -513,6 +514,24 @@ pre {
 	top: 0;
 }
 
+/*image magnifier*/
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid #443e3c;
+  border-radius: 10%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 100px;
+}
+
 #caption-like{
 	text-align: center;
 	padding-left: 18%;
@@ -533,8 +552,9 @@ pre {
 	width:85%;
 }
 
-/*social menu for contact page only*/
+/*end of image magnifier*/
 
+/*social menu for contact page only*/
 .social-menu ul {
     position: absolute;
     top: 50%;
@@ -865,6 +885,18 @@ padding-left:18%;
 	width:75%;
 }
 
+#saathi-img-mag{
+	width: 95%;
+}
+
+#saathi-img-mag-2{
+	width: 95%;
+}
+
+#saathi-img-mag-3{
+	width: 95%;
+}
+
 #img-zoom{
 	width: 85%;
 }
@@ -906,13 +938,9 @@ padding-left:18%;
 	text-decoration:none;
 	color:#443e3c;
 	line-height:0.5em;
-
 	font-size:1.25em;
 	padding:1%;
-
 	transition:.5s color;
-
-
  }
 
  h2,h3{
@@ -971,6 +999,26 @@ p{
 .site-footer{
 	display:none;
  }
+
+ /*image magnifier*/
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid #443e3c;
+  border-radius: 10%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 150px;
+  height: 100px;
+}
+
+/*image magnifier*/
 
 /*reponsive images
 
