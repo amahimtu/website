@@ -929,6 +929,13 @@ padding-left:18%;
 	width: 60%;
 }
 
+#ds-img{
+	width: 75%;
+}
+
+#ds-img2{
+	width: 85%;
+}
 
 /* for mobile devices */
 @media screen and (max-width:600px){
