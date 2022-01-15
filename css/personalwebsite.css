@@ -353,6 +353,7 @@ p, li{
 .proj-summary{
 	color:#443e3c;
 	opacity:0.9;
+	font-size: 1em;
 }
 
 .contact-info{
@@ -768,7 +769,7 @@ padding-left:18%;
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
+/* Create four equal columns that floats next to each other (change to three instead later)*/
 .column {
   float: left;
   width: 25%;
