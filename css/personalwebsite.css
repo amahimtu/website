@@ -942,6 +942,10 @@ padding-left:18%;
 	width: 85%;
 }
 
+#ds-img3{
+	width: 60%;
+}
+
 /* for mobile devices */
 @media screen and (max-width:600px){
 	nav a{
