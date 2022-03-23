@@ -1,19 +1,19 @@
 @font-face{
 	font-family: roboto-condensed, sans-serif;
-    font-weight: 300;
-    font-style: normal;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body{
 	font-family: roboto-condensed, Helvetica, Arial;
-	display:block;
-	margin:0;
+	display: block;
+	margin: 0;
 	background-color: #fffef9;
 	/*background-color:rgba(255,253,208,0.1);*/
 }
 
 p{
-	line-height: 190%;
+	line-height: 1.75;
 }
 
 header{}
@@ -60,7 +60,8 @@ nav{
 	overflow:auto;
 	width:20%;
 	box-sizing: border-box;
-	background-color:#eeeceb;
+	/*background-color:#eeeceb;*/
+	background-color: #fffef9;
 	/*background-image:linear-gradient(to right,#eeeceb,rgba(184,184,184,0.6));*/
 	padding-top:2%;
 	border-radius:2.5px;
@@ -68,14 +69,17 @@ nav{
 }
 
 nav a:hover{
-	color: white;
+	/*color: white;*/
+	color: #866F4B;
+	text-decoration: none;
 	/*color: #D40202;*/
 }
 
 
 main{
 	font-size:1.25em;
-	padding-left: 22%;
+	/*padding-left: 22%;*/
+	padding-left: 20%;
 	line-height: 190%;
 }
 
@@ -302,12 +306,14 @@ text-decoration: none;
 
 .about-me{
 	font-size:1.25em;
-	padding-left:22%;
+	/*padding-left:22%;*/
+	padding-left:20%;
 }
 
 .music{
 	font-size:1.25em;
-	padding-left:22%;
+	/*padding-left:22%;*/
+	padding-left:20%;
 	text-decoration:none;
 	color:#443e3c;
 }
@@ -340,7 +346,8 @@ p, li{
 
 .projects{
 	font-size:1.25em;
-	padding-left:22%;
+	/*padding-left:22%;*/
+	padding-left:20%;
 	padding-top: 0;
 }
 
@@ -358,7 +365,8 @@ p, li{
 
 .contact-info{
 	font-size:1.25em;
-	padding-left:22%;
+	/*padding-left:22%;*/
+	padding-left:20%;
 	padding-top: 0;
 
 }
@@ -406,7 +414,8 @@ li a{
 
 .vacant{
 	width:95%;
-	padding-left:22%;
+	/*padding-left:22%;*/
+	padding-left:20%;
 	padding-top:2%;
 }
 
@@ -751,8 +760,8 @@ padding-left:18%;
   box-sizing: border-box;
   background-color: rgba(255,253,208,0.1);
   padding: 20px;
-  padding-left:22%;
-
+  /*padding-left:22%;*/
+  padding-left:20%;
   padding-top:0; /*Note: this line might be an issue when more projects are added*/
 }
 
@@ -967,9 +976,10 @@ nav{
 	width:100vw;
 	overflow:auto;
 	/*background-color: #eeeceb;*/
-	background-image:linear-gradient(to bottom,#eeeceb,rgba(184,184,184,0.6));
+	/*background-image:linear-gradient(to bottom,#eeeceb,rgba(184,184,184,0.6));*/
 	height:7.0%;
-	border-radius:2.5px;
+	border: 0.1px #443e3c;
+  border-style: none none solid none;
 	position: absolute;
 	display:flex;
 	flex-direction: row;
