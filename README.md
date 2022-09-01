@@ -1,2 +1,2 @@
-# Akshay Mahimtura
+# akshay mahimtura
 © Akshay Mahimtura
