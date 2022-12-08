@@ -16,7 +16,12 @@ p{
 	line-height: 1.75;
 }
 
-header{}
+.email-style{
+	font-family: 'Roboto Mono';
+	font-weight: 350;
+}
+
+/*header{}*/
 
 h1{
 	text-align: center;
@@ -80,7 +85,7 @@ main{
 	font-size:1.25em;
 	/*padding-left: 22%;*/
 	padding-left: 20%;
-	line-height: 190%;
+	line-height: 175%;
 }
 
 p,li{
@@ -327,15 +332,15 @@ h2{
 	padding-top:2.8%;
 	text-align: left;
 	color:#443e3c;
-	font-family: 'Archivo', sans-serif;
-	font-size: 28px;
+	font-family: 'Roboto', sans-serif; /*weight: 400;*/
+	font-size: 26px;
 	padding-right: 16%;
 }
 
 h3{
 	color:#443e3c;
-	font-family: 'Archivo', sans-serif;
-	font-size: 24px;
+	font-family: 'Roboto', sans-serif; /*weight: 400;*/
+	font-size: 22px;
 	padding-right: 16%;
 }
 
@@ -361,6 +366,7 @@ p, li{
 	color:#443e3c;
 	opacity:0.9;
 	font-size: 1em;
+	width: 100%;
 }
 
 .contact-info{
@@ -380,7 +386,7 @@ p, li{
 	text-decoration:none;
 	/*color:#4875B4;*/
 	color: #443e3c;
-	padding-left: 12%;
+	padding-left: 8%;
 }
 
 .fa-soundcloud{
@@ -797,9 +803,9 @@ padding-left:18%;
 
 /* Content */
 .content {
-  background-color: #f5f5f5; /*whitesmoke*/
+  background-color: #fffef9; /*whitesmoke*/
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow:
   0 1.4px 2.2px rgba(0, 0, 0, 0.02),
   0 3.3px 5.3px rgba(0, 0, 0, 0.028),
@@ -1005,7 +1011,7 @@ main,.about-me,.music,.projects,.contact-info,.vacant,#sunset,#workexp{
 	width:100%
  }
 
-h2,h3,h4{
+h2,h3{
 	text-align:center;
 	color: #443e3c;
  }
