@@ -309,6 +309,14 @@ text-decoration: none;
 	max-width:17%;
 }
 
+/*hiding footer for small heights*/
+@media screen and (max-height: 600px) {
+	.site-footer{
+		display:none;
+	}
+}
+/*hid footer for small heights*/
+
 .about-me{
 	font-size:1.25em;
 	/*padding-left:22%;*/
