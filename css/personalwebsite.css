@@ -19,6 +19,14 @@ p{
 .email-style{
 	font-family: 'Roboto Mono';
 	font-weight: 350;
+	font-size: 18px;
+}
+
+.linkedin-style{
+	font-family: 'Roboto Mono';
+	font-weight: 350;
+	font-size: 18px;
+	display:none;
 }
 
 /*header{}*/
@@ -316,6 +324,18 @@ text-decoration: none;
 	}
 }
 /*hid footer for small heights*/
+
+/*hiding social media menu on contact page for small heights*/
+@media screen and (max-height: 575px){
+	.social-menu{
+		display:none;
+	}
+	.linkedin-style{
+		display:inline;
+	}
+}
+/*hid social media menu on contact page for small heights*/
+
 
 .about-me{
 	font-size:1.25em;
